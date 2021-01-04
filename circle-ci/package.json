@@ -15,6 +15,7 @@
     "core-js": "^3.6.5",
     "cypress": "^6.2.0",
     "vue": "^2.6.11",
+    "vue-jest": "^3.0.7",
     "vue-router": "^3.2.0",
     "vuex": "^3.4.0"
   },
@@ -24,10 +25,10 @@
     "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
-    "start-server-and-test": "^1.9.1",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "start-server-and-test": "^1.9.1",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
@@ -43,6 +44,16 @@
       "parser": "babel-eslint"
     },
     "rules": {}
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "vue"
+    ],
+    "transform": {
+      ".*\\.(vue)$": "vue-jest"
+    }
   },
   "browserslist": [
     "> 1%",
